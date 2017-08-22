@@ -615,7 +615,7 @@
     \vspace*{-8.5cm}
     \begin{minipage}[t][2.5cm][t]{10cm}%
         \begin{beamercolorbox}{title}%
-            \usebeamerfont{title}{\Huge\inserttitle\par}%
+            \usebeamerfont{title}{\huge\inserttitle\par}%
             \vspace{0.25cm}%
             \usebeamerfont{subtitle}\insertsubtitle\par%
         \end{beamercolorbox}%
@@ -629,6 +629,10 @@
             \usebeamerfont{date}{\insertdate\par}%
         \end{beamercolorbox}%
         }{}
+        \vspace{1.0cm}%
+        \begin{beamercolorbox}{author}%
+            \usebeamerfont{author}{\insertauthor\par}%
+        \end{beamercolorbox}%
     \end{minipage}%
 }
 
@@ -660,12 +664,14 @@
 \ifthenelse{\equal{\dept}{none}}{%
     \setbeamercolor{title}{fg=ruhuisstijlzwart}
     \setbeamercolor{date}{fg=ruhuisstijlzwart}
+    \setbeamercolor{author}{fg=ruhuisstijlzwart}
     \setbeamercolor{institute}{fg=ruhuisstijlzwart}
     \setbeamercolor*{page number in head/foot}{fg=ruhuisstijlwit}
 	\setbeamercolor*{author in head/foot}{fg=ruhuisstijlwit}
 }{%
     \setbeamercolor{title}{fg=ruhuisstijlwit}
     \setbeamercolor{date}{fg=ruhuisstijlwit}
+    \setbeamercolor{author}{fg=ruhuisstijlwit}
     \setbeamercolor{institute}{fg=ruhuisstijlwit}
     \setbeamercolor*{page number in head/foot}{fg=ruhuisstijlzwart}
 	\setbeamercolor*{author in head/foot}{fg=ruhuisstijlzwart}
