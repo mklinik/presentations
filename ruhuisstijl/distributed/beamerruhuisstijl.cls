@@ -695,6 +695,13 @@
 \definecolor{ruhuisstijlzwart}{rgb}{0,0,0}
 \definecolor{ruhuisstijlwit}{rgb}{0.98,0.98,0.98}
 
+% http://www.ru.nl/publish/pages/596215/secundaire_kleuren.pdf
+\definecolor{ruhuisstijloranje}{HTML}{EC6500}
+\definecolor{ruhuisstijldonkergeel}{HTML}{FDC300}
+\definecolor{ruhuisstijlblauw}{HTML}{008ACB}
+\definecolor{ruhuisstijlpaars}{HTML}{832C87}
+\definecolor{ruhuisstijlgroen}{HTML}{4AA943}
+\definecolor{ruhuisstijlrose}{HTML}{ED0074}
 \newcommand{\rured}[1]{\textcolor{ruhuisstijlrood}{#1}}
 
 
