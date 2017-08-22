@@ -711,4 +711,9 @@
     \rowcolors{1}{ruhuisstijlrood!12}{ruhuisstijlrood!25}
 }
 
+%% Beamer commands for blocks
+\setbeamertemplate{blocks}[rounded][shadow=false]
+\setbeamercolor{block title}{bg=ruhuisstijlrood,fg=white}
+\setbeamercolor{block body}{bg=ruhuisstijlrood!12}
+
 \endinput
