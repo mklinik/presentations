@@ -587,7 +587,7 @@
     }{%
     \ifthenelse{\equal{\dept}{icis}}{%
 			\vspace*{-0.25cm}\hspace*{-1.08cm}
-            \includegraphics[width=1\paperwidth]{backgrounds/ruhuisstijl_icis_2014-43-front.pdf}
+            \includegraphics[width=1.001\paperwidth]{backgrounds/ruhuisstijl_icis_2014-43-front.pdf}
     }{%
     \ifthenelse{\equal{\dept}{mbsd}}{%
 			\vspace*{-0.25cm}\hspace*{-1.08cm}
