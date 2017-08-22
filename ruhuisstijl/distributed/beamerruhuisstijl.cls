@@ -368,8 +368,8 @@
       {\usebeamertemplate{itemize \beameritemnestingprefix item}}
       {%
           \ifbeamer@official
-            \setlength\itemsep{0pt}%
-            \setlength\topsep{0pt}%
+            %\setlength\itemsep{0pt}%
+            %\setlength\topsep{0pt}%
             \setlength\partopsep{0pt}%
             \setlength\parsep{0pt}%
             \setlength\parskip{0pt}%
@@ -380,9 +380,15 @@
               \setlength\labelsep{0.25em}%
               \setlength\labelwidth{0.6em}%
             }{%
-              \setlength\labelsep{10pt}%
-              \setlength\labelwidth{7pt}%
-              \setlength\leftmargin{18pt}%
+              \setlength\partopsep{0em}%
+              \setlength\topsep{0.5em}%
+              \setlength\itemsep{0.5em}%
+              \setlength\labelsep{0pt}%
+              \setlength\labelwidth{0pt}%
+              \setlength\leftmargin{1.5em}%
+              %\setlength\leftmargini{1.5em}%
+              %\setlength\leftmarginii{0.5em}%
+              %\setlength\leftmarginiii{0.5em}%
             }%
           \else%
             \relax%
