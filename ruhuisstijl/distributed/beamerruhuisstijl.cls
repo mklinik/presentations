@@ -715,6 +715,7 @@
 \definecolor{ruhuisstijlgroen}{HTML}{4AA943}
 \definecolor{ruhuisstijlrose}{HTML}{ED0074}
 \newcommand{\rured}[1]{\textcolor{ruhuisstijlrood}{#1}}
+\newcommand{\rublauw}[1]{\textcolor{ruhuisstijlblauw}{#1}}
 
 
 \ifthenelse{\equal{\tablecolours}{false}}{%
