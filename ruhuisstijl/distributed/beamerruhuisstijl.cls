@@ -630,15 +630,15 @@
             \usebeamerfont{institute}{\insertinstitute\par}%
         \end{beamercolorbox}%
         }{}
+        \vspace{1.0cm}%
+        \begin{beamercolorbox}{author}%
+            \usebeamerfont{author}{\insertauthor\par}%
+        \end{beamercolorbox}%
         \ifthenelse{\equal{\showdate}{true}}{
         \begin{beamercolorbox}{date}%
             \usebeamerfont{date}{\insertdate\par}%
         \end{beamercolorbox}%
         }{}
-        \vspace{1.0cm}%
-        \begin{beamercolorbox}{author}%
-            \usebeamerfont{author}{\insertauthor\par}%
-        \end{beamercolorbox}%
     \end{minipage}%
 }
 
