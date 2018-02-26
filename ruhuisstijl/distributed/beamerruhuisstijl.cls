@@ -63,7 +63,7 @@
 \newcommand{\showinstitute}{false}
 \DeclareOptionBeamer{showinstitute}{\renewcommand{\showinstitute}{#1}}
 
-\newcommand{\showdate}{false}
+\newcommand{\showdate}{true}
 \DeclareOptionBeamer{showdate}{\renewcommand{\showdate}{#1}}
 
 
