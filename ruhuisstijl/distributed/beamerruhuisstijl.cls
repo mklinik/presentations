@@ -270,28 +270,28 @@
 }{%
     \setbeamertemplate{footline}{%
         \ifthenelse{\equal{\slidenumbers}{slide} \OR \equal{\slidenumbers}{relative}}{%
-        	\vspace{0.5cm}
+          \vspace{0.5cm}
             \hspace{1cm}%
             \begin{beamercolorbox}[wd=.08\paperwidth,ht=2.25ex,dp=1ex]{page number in head/foot}%
-    			\usebeamerfont{page number in head/foot}\insertframenumber
+          \usebeamerfont{page number in head/foot}\insertframenumber
                   \ifthenelse{\equal{\slidenumbers}{relative}}{%
-    				/\inserttotalframenumber
-				  }
+            /\inserttotalframenumber
+          }
                   {}
-  			\end{beamercolorbox}
+        \end{beamercolorbox}
             \ifthenelse{\equal{\alwaysshowauthor}{true}}{%
-        	\begin{beamercolorbox}[wd=.15\paperwidth,ht=2.25ex,dp=1ex]{author in head/foot}%
-    			\usebeamerfont{author in head/foot}\insertshortauthor
-  			\end{beamercolorbox}
-        	}{}
+          \begin{beamercolorbox}[wd=.15\paperwidth,ht=2.25ex,dp=1ex]{author in head/foot}%
+          \usebeamerfont{author in head/foot}\insertshortauthor
+        \end{beamercolorbox}
+          }{}
             \ifthenelse{\equal{\alwaysshowdate}{true}}{%
-        	\begin{beamercolorbox}[wd=.15\paperwidth,ht=2.25ex,dp=1ex]{author in head/foot}%
-    			\usebeamerfont{author in head/foot}\insertshortdate
-  			\end{beamercolorbox}
-        	}{}
+          \begin{beamercolorbox}[wd=.15\paperwidth,ht=2.25ex,dp=1ex]{author in head/foot}%
+          \usebeamerfont{author in head/foot}\insertshortdate
+        \end{beamercolorbox}
+          }{}
             \vspace{0.5cm}
         }{%
-        	\vspace{1.25cm}
+          \vspace{1.25cm}
         }
         
     }
@@ -467,11 +467,11 @@
 }%
 
 \ifthenelse{\equal{\tocatsectionstart}{true}}{%
-	\AtBeginSection{
-		\begin{frame}[c,plain,noframenumbering]
-        	\frametitle{\tocatsectionstarttitle}
-        	\tableofcontents[currentsection,hideothersubsections]
-    	\end{frame}
+  \AtBeginSection{
+    \begin{frame}[c,plain,noframenumbering]
+          \frametitle{\tocatsectionstarttitle}
+          \tableofcontents[currentsection,hideothersubsections]
+      \end{frame}
     }%
 }{%
 }
@@ -559,62 +559,62 @@
 \defbeamertemplate*{title page}{ruhuisstijl}[1][]
 {
     \ifthenelse{\equal{\dept}{clst}}{%
-			\vspace*{-0.25cm}\hspace*{-1.08cm}
+      \vspace*{-0.25cm}\hspace*{-1.08cm}
             \includegraphics[width=1\paperwidth]{backgrounds/ruhuisstijl_clst_2014-43-front.pdf}
     }{%
     \ifthenelse{\equal{\dept}{cls}}{%
-        	\vspace*{-0.25cm}\hspace*{-1.08cm}
+          \vspace*{-0.25cm}\hspace*{-1.08cm}
             \includegraphics[width=1\paperwidth]{backgrounds/ruhuisstijl_cls_2014-43-front.pdf}
     }{%
     \ifthenelse{\equal{\dept}{hlcs}}{%
-			\vspace*{-0.25cm}\hspace*{-1.08cm}
+      \vspace*{-0.25cm}\hspace*{-1.08cm}
             \includegraphics[width=1\paperwidth]{backgrounds/ruhuisstijl_hlcs_2014-43-front.pdf}
     }{%
     \ifthenelse{\equal{\dept}{kaski}}{%
-			\vspace*{-0.25cm}\hspace*{-1.08cm}
+      \vspace*{-0.25cm}\hspace*{-1.08cm}
             \includegraphics[width=1\paperwidth]{backgrounds/ruhuisstijl_kaski_2014-43-front.pdf}
     }{%
     \ifthenelse{\equal{\dept}{ptrs}}{%
-			\vspace*{-0.25cm}\hspace*{-1.08cm}
+      \vspace*{-0.25cm}\hspace*{-1.08cm}
             \includegraphics[width=1\paperwidth]{backgrounds/ruhuisstijl_ptrs_2014-43-front.pdf}
     }{%
     \ifthenelse{\equal{\dept}{imr}}{%
-			\vspace*{-0.25cm}\hspace*{-1.08cm}
+      \vspace*{-0.25cm}\hspace*{-1.08cm}
             \includegraphics[width=1\paperwidth]{backgrounds/ruhuisstijl_imr_2014-43-front.pdf}
     }{%
     \ifthenelse{\equal{\dept}{is}}{%
-			\vspace*{-0.25cm}\hspace*{-1.08cm}
+      \vspace*{-0.25cm}\hspace*{-1.08cm}
             \includegraphics[width=1\paperwidth]{backgrounds/ruhuisstijl_is_2014-43-front.pdf}
     }{%
     \ifthenelse{\equal{\dept}{datascience}}{%
-			\vspace*{-0.25cm}\hspace*{-1.08cm}
+      \vspace*{-0.25cm}\hspace*{-1.08cm}
             \includegraphics[width=1\paperwidth]{backgrounds/ruhuisstijl_ds_2016_43-front.pdf}
     }{%
     \ifthenelse{\equal{\dept}{softwarescience}}{%
-			\vspace*{-0.25cm}\hspace*{-1.08cm}
+      \vspace*{-0.25cm}\hspace*{-1.08cm}
             \includegraphics[width=1\paperwidth]{backgrounds/ruhuisstijl_ss_2016_43-front.pdf}
     }{%
     \ifthenelse{\equal{\dept}{icis}}{%
-			\vspace*{-0.25cm}\hspace*{-1.08cm}
+      \vspace*{-0.25cm}\hspace*{-1.08cm}
             \includegraphics[width=1.001\paperwidth]{backgrounds/ruhuisstijl_icis_2017-front.pdf}
     }{%
     \ifthenelse{\equal{\dept}{mbsd}}{%
-			\vspace*{-0.25cm}\hspace*{-1.08cm}
+      \vspace*{-0.25cm}\hspace*{-1.08cm}
             \includegraphics[width=1\paperwidth]{backgrounds/ruhuisstijl_mbsd_2014-43-front.pdf}
     }{%
     \ifthenelse{\equal{\dept}{ds}}{%
-			\vspace*{-0.25cm}\hspace*{-1.08cm}
+      \vspace*{-0.25cm}\hspace*{-1.08cm}
             \includegraphics[width=1\paperwidth]{backgrounds/ruhuisstijl_ds_2014-43-front.pdf}
     }{%
     \ifthenelse{\equal{\dept}{ster}}{%
-			\vspace*{-0.25cm}\hspace*{-1.08cm}
+      \vspace*{-0.25cm}\hspace*{-1.08cm}
             \includegraphics[width=1\paperwidth]{backgrounds/ruhuisstijl_ster_2014-43-front.pdf}
     }{%
-			\vspace*{-0.23cm}\hspace*{-1.08cm}
+      \vspace*{-0.23cm}\hspace*{-1.08cm}
             \includegraphics[width=1\paperwidth]{backgrounds/ruhuisstijl2014-43-front.pdf}
     }}}}}}}}}}}}}%
     \ifthenelse{\equal{\grouplogo}{lama}}{%
-    	%\vspace*{-0.8cm}
+      %\vspace*{-0.8cm}
         \hspace*{-12.5cm}
         % [trim=-5cm 0 0 -1cm] left bottom right top
         % trim the graphic for positive values and add space for negative values
@@ -676,14 +676,14 @@
     \setbeamercolor{author}{fg=ruhuisstijlzwart}
     \setbeamercolor{institute}{fg=ruhuisstijlzwart}
     \setbeamercolor*{page number in head/foot}{fg=ruhuisstijlwit}
-	\setbeamercolor*{author in head/foot}{fg=ruhuisstijlwit}
+  \setbeamercolor*{author in head/foot}{fg=ruhuisstijlwit}
 }{%
     \setbeamercolor{title}{fg=ruhuisstijlwit}
     \setbeamercolor{date}{fg=ruhuisstijlwit}
     \setbeamercolor{author}{fg=ruhuisstijlwit}
     \setbeamercolor{institute}{fg=ruhuisstijlwit}
     \setbeamercolor*{page number in head/foot}{fg=ruhuisstijlzwart}
-	\setbeamercolor*{author in head/foot}{fg=ruhuisstijlzwart}
+  \setbeamercolor*{author in head/foot}{fg=ruhuisstijlzwart}
 }
 
 \mode<all>
