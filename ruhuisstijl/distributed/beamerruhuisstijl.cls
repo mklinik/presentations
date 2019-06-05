@@ -137,116 +137,119 @@
   \fi
 }
 
-\pgfpagesdeclarelayout{6 on 1}
-{
-  \edef\pgfpageoptionheight{\the\paperwidth} % landscaped by default
-  \edef\pgfpageoptionwidth{\the\paperheight}
-  \def\pgfpageoptionborder{0pt}
-  \def\pgfpageoptionfirstshipout{1}
-}
-{
-  \pgfpagesphysicalpageoptions
-  {%
-    logical pages=6,%
-    physical height=\pgfpageoptionheight,%
-    physical width=\pgfpageoptionwidth,%
-    current logical shipout=\pgfpageoptionfirstshipout%
-  }
-  \ifdim\paperheight>\paperwidth\relax
-    % put side-by-side
-    \pgfpageslogicalpageoptions{1}
-    {%
-      border shrink=\pgfpageoptionborder,%
-      resized width=.5\pgfphysicalwidth,%
-      resized height=\pgfphysicalheight,%
-      center=\pgfpoint{.1667\pgfphysicalwidth}{.25\pgfphysicalheight}%
-    }%
-    \pgfpageslogicalpageoptions{3}
-    {%
-      border shrink=\pgfpageoptionborder,%
-      resized width=.5\pgfphysicalwidth,%
-      resized height=\pgfphysicalheight,%
-      center=\pgfpoint{.5\pgfphysicalwidth}{.25\pgfphysicalheight}%
-    }%
-    \pgfpageslogicalpageoptions{5}
-    {%
-      border shrink=\pgfpageoptionborder,%
-      resized width=.5\pgfphysicalwidth,%
-      resized height=\pgfphysicalheight,%
-      center=\pgfpoint{.8333\pgfphysicalwidth}{.25\pgfphysicalheight}%
-    }%
-    \pgfpageslogicalpageoptions{2}
-    {%
-      border shrink=\pgfpageoptionborder,%
-      resized width=.5\pgfphysicalwidth,%
-      resized height=\pgfphysicalheight,%
-      center=\pgfpoint{.1667\pgfphysicalwidth}{.75\pgfphysicalheight}%
-    }%
-    \pgfpageslogicalpageoptions{4}
-    {%
-      border shrink=\pgfpageoptionborder,%
-      resized width=.5\pgfphysicalwidth,%
-      resized height=\pgfphysicalheight,%
-      center=\pgfpoint{.5\pgfphysicalwidth}{.75\pgfphysicalheight}%
-    }%
-    \pgfpageslogicalpageoptions{6}
-    {%
-      border shrink=\pgfpageoptionborder,%
-      resized width=.5\pgfphysicalwidth,%
-      resized height=\pgfphysicalheight,%
-      center=\pgfpoint{.8333\pgfphysicalwidth}{.75\pgfphysicalheight}%
-    }%
-  \else
-    % stack on top of one another
-    \pgfpageslogicalpageoptions{1}
-    {%
-      border shrink=\pgfpageoptionborder,%
-      resized width=0.5\pgfphysicalwidth,%
-      resized height=\pgfphysicalheight,%
-      center=\pgfpoint{.25\pgfphysicalwidth}{.8333\pgfphysicalheight}%
-    }%
-    \pgfpageslogicalpageoptions{3}
-    {%
-      border shrink=\pgfpageoptionborder,%
-      resized width=0.5\pgfphysicalwidth,%
-      resized height=\pgfphysicalheight,%
-      center=\pgfpoint{.25\pgfphysicalwidth}{.5\pgfphysicalheight}%
-    }%
-    \pgfpageslogicalpageoptions{5}
-    {%
-      border shrink=\pgfpageoptionborder,%
-      resized width=0.5\pgfphysicalwidth,%
-      resized height=\pgfphysicalheight,%
-      center=\pgfpoint{.25\pgfphysicalwidth}{.1667\pgfphysicalheight}%
-    }%
-    \pgfpageslogicalpageoptions{2}
-    {%
-      border shrink=\pgfpageoptionborder,%
-      resized width=0.5\pgfphysicalwidth,%
-      resized height=\pgfphysicalheight,%
-      center=\pgfpoint{.75\pgfphysicalwidth}{.8333\pgfphysicalheight}%
-    }%
-    \pgfpageslogicalpageoptions{4}
-    {%
-      border shrink=\pgfpageoptionborder,%
-      resized width=0.5\pgfphysicalwidth,%
-      resized height=\pgfphysicalheight,%
-      center=\pgfpoint{.75\pgfphysicalwidth}{.5\pgfphysicalheight}%
-    }%
-    \pgfpageslogicalpageoptions{6}
-    {%
-      border shrink=\pgfpageoptionborder,%
-      resized width=0.5\pgfphysicalwidth,%
-      resized height=\pgfphysicalheight,%
-      center=\pgfpoint{.75\pgfphysicalwidth}{.1667\pgfphysicalheight}%
-    }%
-  \fi
-}
+%%%%%%%%%%%
+% 6 on 1 produces some error with the newest version of tikz. Don't want to fix it right now. Disabling it.
+
+%\pgfpagesdeclarelayout{6 on 1}
+%{
+  %\edef\pgfpageoptionheight{\the\paperwidth} % landscaped by default
+  %\edef\pgfpageoptionwidth{\the\paperheight}
+  %\def\pgfpageoptionborder{0pt}
+  %\def\pgfpageoptionfirstshipout{1}
+%}
+%{
+  %\pgfpagesphysicalpageoptions
+  %{%
+    %logical pages=6,%
+    %physical height=\pgfpageoptionheight,%
+    %physical width=\pgfpageoptionwidth,%
+    %current logical shipout=\pgfpageoptionfirstshipout%
+  %}
+  %\ifdim\paperheight>\paperwidth\relax
+    %% put side-by-side
+    %\pgfpageslogicalpageoptions{1}
+    %{%
+      %border shrink=\pgfpageoptionborder,%
+      %resized width=.5\pgfphysicalwidth,%
+      %resized height=\pgfphysicalheight,%
+      %center=\pgfpoint{.1667\pgfphysicalwidth}{.25\pgfphysicalheight}%
+    %}%
+    %\pgfpageslogicalpageoptions{3}
+    %{%
+      %border shrink=\pgfpageoptionborder,%
+      %resized width=.5\pgfphysicalwidth,%
+      %resized height=\pgfphysicalheight,%
+      %center=\pgfpoint{.5\pgfphysicalwidth}{.25\pgfphysicalheight}%
+    %}%
+    %\pgfpageslogicalpageoptions{5}
+    %{%
+      %border shrink=\pgfpageoptionborder,%
+      %resized width=.5\pgfphysicalwidth,%
+      %resized height=\pgfphysicalheight,%
+      %center=\pgfpoint{.8333\pgfphysicalwidth}{.25\pgfphysicalheight}%
+    %}%
+    %\pgfpageslogicalpageoptions{2}
+    %{%
+      %border shrink=\pgfpageoptionborder,%
+      %resized width=.5\pgfphysicalwidth,%
+      %resized height=\pgfphysicalheight,%
+      %center=\pgfpoint{.1667\pgfphysicalwidth}{.75\pgfphysicalheight}%
+    %}%
+    %\pgfpageslogicalpageoptions{4}
+    %{%
+      %border shrink=\pgfpageoptionborder,%
+      %resized width=.5\pgfphysicalwidth,%
+      %resized height=\pgfphysicalheight,%
+      %center=\pgfpoint{.5\pgfphysicalwidth}{.75\pgfphysicalheight}%
+    %}%
+    %\pgfpageslogicalpageoptions{6}
+    %{%
+      %border shrink=\pgfpageoptionborder,%
+      %resized width=.5\pgfphysicalwidth,%
+      %resized height=\pgfphysicalheight,%
+      %center=\pgfpoint{.8333\pgfphysicalwidth}{.75\pgfphysicalheight}%
+    %}%
+  %\else
+    %% stack on top of one another
+    %\pgfpageslogicalpageoptions{1}
+    %{%
+      %border shrink=\pgfpageoptionborder,%
+      %resized width=0.5\pgfphysicalwidth,%
+      %resized height=\pgfphysicalheight,%
+      %center=\pgfpoint{.25\pgfphysicalwidth}{.8333\pgfphysicalheight}%
+    %}%
+    %\pgfpageslogicalpageoptions{3}
+    %{%
+      %border shrink=\pgfpageoptionborder,%
+      %resized width=0.5\pgfphysicalwidth,%
+      %resized height=\pgfphysicalheight,%
+      %center=\pgfpoint{.25\pgfphysicalwidth}{.5\pgfphysicalheight}%
+    %}%
+    %\pgfpageslogicalpageoptions{5}
+    %{%
+      %border shrink=\pgfpageoptionborder,%
+      %resized width=0.5\pgfphysicalwidth,%
+      %resized height=\pgfphysicalheight,%
+      %center=\pgfpoint{.25\pgfphysicalwidth}{.1667\pgfphysicalheight}%
+    %}%
+    %\pgfpageslogicalpageoptions{2}
+    %{%
+      %border shrink=\pgfpageoptionborder,%
+      %resized width=0.5\pgfphysicalwidth,%
+      %resized height=\pgfphysicalheight,%
+      %center=\pgfpoint{.75\pgfphysicalwidth}{.8333\pgfphysicalheight}%
+    %}%
+    %\pgfpageslogicalpageoptions{4}
+    %{%
+      %border shrink=\pgfpageoptionborder,%
+      %resized width=0.5\pgfphysicalwidth,%
+      %resized height=\pgfphysicalheight,%
+      %center=\pgfpoint{.75\pgfphysicalwidth}{.5\pgfphysicalheight}%
+    %}%
+    %\pgfpageslogicalpageoptions{6}
+    %{%
+      %border shrink=\pgfpageoptionborder,%
+      %resized width=0.5\pgfphysicalwidth,%
+      %resized height=\pgfphysicalheight,%
+      %center=\pgfpoint{.75\pgfphysicalwidth}{.1667\pgfphysicalheight}%
+    %}%
+  %\fi
+%}
 
 \ifthenelse{\equal{\spp}{2}}{\pgfpagesuselayout{2 on 1}[a4paper,border shrink=5mm]}{}
 \ifthenelse{\equal{\spp}{3}}{\pgfpagesuselayout{3 on 1}[a4paper,border shrink=5mm]}{}
 \ifthenelse{\equal{\spp}{4}}{\pgfpagesuselayout{4 on 1}[a4paper,border shrink=5mm,landscape]}{}
-\ifthenelse{\equal{\spp}{6}}{\pgfpagesuselayout{6 on 1}[a4paper,border shrink=5mm]}{}
+%\ifthenelse{\equal{\spp}{6}}{\pgfpagesuselayout{6 on 1}[a4paper,border shrink=5mm]}{}
 
 \setbeamertemplate{background}[grid][step=10]
 
