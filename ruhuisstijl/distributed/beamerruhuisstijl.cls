@@ -447,13 +447,13 @@
 \newenvironment{tussenpagina}[3]{%
     \begin{frame}
         \ifthenelse{\equal{\dept}{none}}{%
-            \vspace*{-0.25cm}\hspace*{-1cm}\includegraphics[width=1\paperwidth]{backgrounds/ruhuisstijl2014-43-front.pdf}
+            \vspace*{-0.25cm}\hspace*{-1cm}\includegraphics[width=1\paperwidth]{backgrounds/ruhuisstijl2014-43-front.pdf}%
             \vspace*{-5cm}
             \includegraphics[width=0.5\textwidth]{#3}\par%
             \vspace*{-8cm}
         }{%
-            \vspace*{-0.25cm}\hspace*{-1cm}\includegraphics[width=12.8cm,height=8.34cm]{#3}
-            \vspace*{-7.5cm}
+            \vspace*{-0.25cm}\hspace*{-1cm}\includegraphics[width=12.8cm,height=8.34cm]{#3}%
+            \vspace*{-7.5cm}%
         }
         \begin{minipage}[t][2.5cm][t]{10cm}%
             \begin{beamercolorbox}{title}%
