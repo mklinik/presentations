@@ -66,6 +66,9 @@
 \newcommand{\showdate}{true}
 \DeclareOptionBeamer{showdate}{\renewcommand{\showdate}{#1}}
 
+\newcommand{\authorspace}{3}
+\DeclareOptionBeamer{authorspace}{\renewcommand{\authorspace}{#1}}
+
 
 \only<handout>{
     \renewcommand{\spp}{2}
@@ -633,7 +636,7 @@
             \usebeamerfont{institute}{\insertinstitute\par}%
         \end{beamercolorbox}%
         }{}
-        \vspace{1.0cm}%
+        \vspace{\authorspace\baselineskip}%
         \begin{beamercolorbox}{author}%
             \usebeamerfont{author}{\insertauthor\par}%
         \end{beamercolorbox}%
